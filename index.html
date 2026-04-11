@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Balloon Battle</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #07091A;
+      color: #E8EEF8;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* Sky gradient header */
+    .hero {
+      background: linear-gradient(160deg, #07091A 0%, #0F1E48 50%, #1A2860 100%);
+      padding: 60px 24px 48px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Floating balloons decoration */
+    .balloons {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .balloon {
+      position: absolute;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      opacity: 0.18;
+      animation: floatUp linear infinite;
+    }
+    @keyframes floatUp {
+      from { transform: translateY(120%) rotate(-4deg); }
+      to   { transform: translateY(-40%)  rotate(4deg); }
+    }
+
+    .game-title {
+      font-size: clamp(13px, 3vw, 15px);
+      color: rgba(255,200,80,.7);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .page-title {
+      font-size: clamp(28px, 6vw, 48px);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    .last-updated {
+      font-size: 13px;
+      color: rgba(255,255,255,.4);
+    }
+
+    /* Content */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .summary-card {
+      background: linear-gradient(135deg, rgba(255,180,0,.15), rgba(200,80,0,.1));
+      border: 1.5px solid rgba(255,180,0,.35);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #FFE566;
+    }
+
+    .summary-card strong {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.75);
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '·';
+      position: absolute;
+      left: 6px;
+      color: rgba(255,200,80,.6);
+      font-weight: bold;
+    }
+
+    .chip {
+      display: inline-block;
+      background: rgba(68,255,136,.1);
+      border: 1px solid rgba(68,255,136,.25);
+      color: #44FF88;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      letter-spacing: .5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid rgba(255,255,255,.06);
+      font-size: 13px;
+      color: rgba(255,255,255,.3);
+    }
+
+    .footer a {
+      color: rgba(255,200,80,.6);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #FFD84D;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 40px 20px 36px; }
+      .content { padding: 32px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="balloons">
+      <div class="balloon" style="width:60px;height:72px;background:#F05050;left:8%;animation-duration:12s;animation-delay:-3s;"></div>
+      <div class="balloon" style="width:44px;height:54px;background:#EFC820;left:22%;animation-duration:16s;animation-delay:-8s;"></div>
+      <div class="balloon" style="width:52px;height:64px;background:#3D80F0;left:72%;animation-duration:14s;animation-delay:-1s;"></div>
+      <div class="balloon" style="width:38px;height:46px;background:#50C878;left:85%;animation-duration:18s;animation-delay:-5s;"></div>
+      <div class="balloon" style="width:48px;height:58px;background:#F06090;left:55%;animation-duration:11s;animation-delay:-9s;"></div>
+    </div>
+    <div class="game-title">🎈 Balloon Battle</div>
+    <div class="page-title">Privacy Policy</div>
+    <div class="last-updated">Last updated: April 2026</div>
+  </div>
+
+  <div class="content">
+
+    <div class="summary-card">
+      <strong>The short version</strong>
+      Balloon Battle does not collect, transmit, or share any personal data. Everything stays on your device.
+    </div>
+
+    <section>
+      <span class="chip">✓ No data collected</span>
+      <h2>Information We Collect</h2>
+      <p>We collect no personal information. Balloon Battle does not collect, store, transmit, or share:</p>
+      <ul>
+        <li>Your name, email address, or any contact information</li>
+        <li>Location data</li>
+        <li>Device identifiers or advertising IDs</li>
+        <li>Usage analytics or telemetry</li>
+        <li>Financial information</li>
+        <li>Health or biometric data</li>
+        <li>Any other personal information</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Local Storage</h2>
+      <p>Balloon Battle saves the following data <strong>locally on your device only</strong>, using your device's built-in storage:</p>
+      <ul>
+        <li>Your game progress — levels completed, stars earned, high scores</li>
+        <li>Your character customisation choices — skin tone, hair colour, outfit</li>
+        <li>Your app settings — sound, visual quality, difficulty</li>
+        <li>Your daily challenge results and login streak</li>
+      </ul>
+      <p>This data never leaves your device. It is not transmitted to any server, and we have no access to it.</p>
+    </section>
+
+    <section>
+      <h2>Multiplayer</h2>
+      <p>Balloon Battle includes an optional local network multiplayer mode. When using multiplayer:</p>
+      <ul>
+        <li>Your device connects directly to a local relay server on your network</li>
+        <li>Only gameplay data — position, actions, scores — is transmitted during a session</li>
+        <li>No data is stored after the session ends</li>
+        <li>No account or login is required</li>
+        <li>No personal information is transmitted</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>Balloon Battle does <strong>not</strong> use advertising networks, analytics services, crash reporting, social media SDKs, or any third-party SDKs that collect data. All fonts are bundled locally and make no external network requests.</p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>Balloon Battle is suitable for all ages. Because we collect no personal information from anyone, there are no special provisions required for users under 13 (COPPA) or under 16 (GDPR). We do not knowingly or unknowingly collect data from children or adults.</p>
+    </section>
+
+    <section>
+      <h2>Deleting Your Data</h2>
+      <p>Because no data is transmitted off your device, we hold nothing to delete. Uninstalling the app removes all locally stored data automatically. You can also use the <strong>Reset Progress</strong> option in the game's Settings screen to clear saved progress while keeping the app installed.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>If this policy changes in a future update, the updated version will be posted at this URL and the "Last updated" date will be revised. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>If you have any questions about this privacy policy, please open an issue on the <a href="https://github.com/kennedylinzie/balloon-battle-legal" style="color:#FFD84D;">GitHub repository</a> or contact the developer directly through GitHub.</p>
+    </section>
+
+  </div>
+
+  <div class="footer">
+    <p>Balloon Battle · Independent Game · <a href="https://github.com/kennedylinzie/balloon-battle-legal">GitHub</a></p>
+    <p style="margin-top:8px;">All game data is stored locally on your device.</p>
+  </div>
+
+</body>
+</html>
